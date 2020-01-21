@@ -3,7 +3,7 @@ module.exports = function generateHTML(
   engineerArr,
   internArr,
   developerArr,
-  apperenticeArr
+  apprenticeArr
 ) {
   return `
   <!DOCTYPE html>
@@ -18,7 +18,7 @@ module.exports = function generateHTML(
     <title>Engineering Team</title>
     <style>
     body {
-        background-image: url(assets/meetingroom.jpg);
+        background-image: url(https://unsplash.com/photos/1RT4txDDAbM);
         background-size: cover;
             background-attachment: scroll;
         }
@@ -126,16 +126,16 @@ module.exports = function generateHTML(
         </div>
     </div>
     <div class="col">
-        `.trim()
+       `.trim()
               )
               .join("")}
-        ${apperenticeArr
+        ${apprenticeArr
           .map(employee =>
             `
     <div class="card text-white bg-info mb-3" class="employee" style="width: 18rem;">
       <div class="card-body">
         <h5 class="card-name">${employee.name}</h5>
-        <h6 id="position" class="card-subtitle mb-2 text-muted">Apperentice</h6>
+        <h6 id="position" class="card-subtitle mb-2 text-muted">Apprentice</h6>
         <p class="id text">ID: ${employee.id}</p>
             <p class="email text">Email: <br>${employee.email}</p>
             <p class="relevantInfo text">School: ${employee.school}</a></p>
